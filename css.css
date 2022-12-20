@@ -1,0 +1,56 @@
+
+@property --an {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 100deg;
+}
+.html {
+  font-size: 20vh;
+}
+.half {
+    width: 45%;
+    height: 45%;
+    margin: 2.5%;
+    float: left;
+}
+.text {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: black;
+    font-weight: 100;
+
+    font-size: 4.6vh;
+    text-align: center;
+    margin-top: 0.33em;
+}
+.gtext {
+    background: linear-gradient(var(--an), #e81cff, #40c9ff) 0% 0% / 200%; animation: 11s ease 0s infinite normal none running AnimationName, 25s ease 0s infinite normal none running Animation2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.gtext2 {
+    background: linear-gradient(var(--an), #e81cff, #40c9ff) 0% 0% / 200%; animation: 11s ease 0s infinite normal none running AnimationName, 25s ease 0s infinite normal none running Animation3;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 11vh;
+    cursor: pointer;
+}
+@keyframes Animation2 {
+    0%{--an:300deg;}
+    25%{--an:210deg;}
+    50%{--an:120deg;}
+    75%{--an:30deg;}
+    100%{--an:-60deg;}
+}
+@keyframes Animation3 {
+    0%{--an:100deg;}
+    25%{--an:10deg;}
+    50%{--an:-80deg;}
+    75%{--an:-170deg;}
+    100%{--an:-260deg;}
+}
+@font-face {
+  font-family: 'Uni Sans';
+  src: url('uni-sans.heavy-caps.otf');
+}
